@@ -1,0 +1,81 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#main {
+
+}
+
+#header {
+    background-color: #000;
+    height: 5vh;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 5vh;
+    padding: 0 15px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+
+}
+
+#nav .subnav li:hover,
+#nav>li:hover>a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#nav .subnav a{
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 26.5px;
+}
+
+#slider {
+    background-color: #fff;
+    min-height: 45vh;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
