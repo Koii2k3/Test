@@ -14,8 +14,17 @@ html {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #000;
     height: 5vh;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -64,12 +73,58 @@ html {
     color: black;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0 26.5px;
+    padding: 0 37.23px;
+}
+
+.nav-arrow-down {
+    font-size: 15px;
+    padding: 2px;
+}
+
+.search-btn {
+    float: right;
+    line-height: 5vh;
+    padding: 0 20px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 57, 57, 0.858);
+}
+
+.header-search {
+    color: white;
 }
 
 #slider {
-    background-color: #fff;
-    min-height: 45vh;
+    position: relative;
+    min-height: 15vh;
+    margin: 5vh 0 0;
+    /* padding: theo đơn vị % sẽ lấy theo % của chiều dài */
+    padding-top: 50%;
+    background: url('./img/avatar.png') no-repeat center / contain;
+    box-shadow: rgba(137, 111, 106, 0.4) -5px 5px, rgba(137, 111, 106, 0.3) -10px 10px, rgba(137, 111, 106, 0.2) -15px 15px, rgba(137, 111, 106, 0.1) -20px 20px, rgba(137, 111, 106, 0.05) -25px 25px;
+}
+
+#slider .content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    line-height: 200%;
+}
+
+#slider .nickname {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 10%;
+    top: 25%;
+    text-align: center;
+}
+
+#slider .describe-image {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 10%;
+    bottom: 10%;
 }
 
 #content {
