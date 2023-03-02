@@ -101,7 +101,7 @@ html {
     height: 15vh;
     margin: 5vh 0 0;
     /* padding: theo đơn vị % sẽ lấy theo % của chiều dài */
-    padding-top: 25%;
+    padding-top: 20%;
     background: url('./img/avatar.png') no-repeat center/contain;
     /* background-size: auto; */
 }
@@ -138,13 +138,13 @@ html {
 
 .content-parent-header>h1 {
     display: inline;
-    background-color: #ffffffd1;
-    padding: 5px;
+    background-color: #ffffff86;
     color: #537FE7;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content-header {
-    background: url(https://img.freepik.com/free-vector/linear-flat-abstract-lines-pattern_23-2148939520.jpg) center;
+    background: url(./img/contentheaderbackground.webp) center/contain;
 }
 
 .content-parent-box {
@@ -155,32 +155,32 @@ html {
 
 .content-parent-header {
     text-align: center;
-    padding: 10px;
 }
 
 .content-child-box {
     display: inline-block;
-    width: 50%;
     height: 50%;
-    padding: 0 30px;
+    padding: 0 75px;
 }
 
 #content-child-box1 {
     position: absolute;
+    width: 30%;
     background: #FFB3B3;
     border: 5px dashed #F48484;
 }
 
 #content-child-box2 {
     position: absolute;
-    right: 0;
+    width: 45%;
+    left: 30%;
     background: #FFDBA4;
     border: 5px dashed #FFB84C;
 }
 
 .content-child-header {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 20px;
 }
 
 .content-child-header>h2 {
@@ -189,48 +189,59 @@ html {
 }
 
 .content-child-content {
-    padding-top: 10px;
+    padding-top: 15px;
+}
+
+.content-table th{
+    text-align: right;
+}
+
+.content-table td::before{
+    content: "\00a0";
 }
 
 #content-child-box3 {
     position: absolute;
-    width: 60%;
-    bottom: 0;
-    background-color: #FFE9AE; 
-    border: 5px dashed #FEBE8C;
-}
-
-#content-child-box4 {
-    position: absolute;
-    width: 40%;
-    bottom: 0;
+    width: 25%;
     right: 0;
     background: #C1EFFF;
     border: 5px dashed #31C6D4;
 }
 
-#content-child-box4 a {
+#content-child-box3 a {
     text-decoration: none;
     border-radius: 25%;
     color: black;
     font-size: x-large;
 }
 
-#content-child-box4 a i {
+#content-child-box3 a i {
     display: inline-block;
     border-radius: 25%;
     padding: 15px;
 }
 
-#content-child-box4>.content-child-content {
+#content-child-box3>.content-child-content {
     position: relative;
     display: flex;
     justify-content: center;
     top: 10%;
 }
 
-#content-child-box4>.content-child-content a:hover{
+#content-child-box3>.content-child-content a:hover{
     background-color: #ccc;
+}
+
+#content-child-box4 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFE9AE; 
+    border: 5px dashed #FEBE8C;
+}
+
+#content-child-box4 .content-child-content {
+    line-height: 30px;
 }
 
 #footer {
