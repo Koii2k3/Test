@@ -1,0 +1,147 @@
+<!-- Các bước xây dựng 1 Website:
+1. Phân tích
+2. Dựng base
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+
+- Những thành phần thường gặp:
+    + Header (đầu trang)
+    + Navigation (phần điều hướng của trang để di chuyển qua lại các trang chính)
+    + Breadcrumb (hiển thị vị trí đang xem)
+    + Sidebar (thanh bar nằm ở 1 phía)
+    + Slider (các nội dung có tính năng trượt (sang trái phải lên xuống))
+    + Content (nội dung chính trong trang)
+    + Banner (khu vực chứa ảnh quảng cáo)
+    + Footer (chân trang)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Navigation -->
+            <ul id="nav">
+                <li><a href="">Intro</a></li>
+                <li><a href="">Information</a></li>
+                <li><a href="">Achievements</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">
+                        Future Plan
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Study</a></li>
+                        <li><a href="">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Search -->
+            <div class="search-btn">
+                <i class="header-search ti-search"></i>
+            </div>
+
+        </div>
+
+
+        <div id="slider">
+            <div class="slider-content nickname">Nickname<h2>Koi</h2></div>
+            <div class="slider-content describe-image">Pixel Avatar</div>
+        </div>
+
+        <hr>
+        <div id="content">
+            <div class="content-header">
+                <div class="content-parent-header">
+                    <h1>QUICKVIEW</h1>
+                </div>
+            </div>
+            <div class="content-parent-box">
+                <div class="content-child-box" id="content-child-box1">
+                    <div class="content-child-header"><h2>Basic Information</h2></div>
+                    <div class="content-child-content">
+                        <table class="content-table">
+                            <tr>
+                                <th>Full Name:</th>
+                                <td>Nguyen Anh Khoi</td>
+                            </tr>
+                            <tr>
+                                <th>Birthday:</th>
+                                <td>09 / 04 / 2003</td>
+                            </tr>
+                            <tr>
+                                <th>Living:</th>
+                                <td>Ho Chi Minh City</td>
+                            </tr>
+                            <tr>
+                                <th>Marital Status:</th>
+                                <td>Dream to be a Couple</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-child-box" id="content-child-box2">
+                    <div class="content-child-header"><h2>Schooling</h2></div>
+                    <div class="content-child-content">
+                        <table class="content-table">
+                            <tr>
+                                <th>High School:</th>
+                                <td>Tran Khai Nguyen High School</td>
+                            </tr>
+                            <tr>
+                                <th>Studying:</th>
+                                <td>Ton Duc Thang University (TDTU) - Tan Phong</td>
+                            </tr>
+                            <tr>
+                                <th>Major:</th>
+                                <td>Computer Science - Information Technology (IT)</td>
+                            </tr>
+                            <tr>
+                                <th>School Years:</th>
+                                <td>2021-2025</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-child-box" id="content-child-box3">
+                    <div class="content-child-header"><h2>Contact</h2></div>
+                    <div class="content-child-content">
+                        <a href="https://www.facebook.com/profile.php?id=100004934144985" title="Me on Facebook"><i class="ti-facebook"></i></a>
+                        <a href="https://www.instagram.com/___k.o.i.i___/" title="Me on Instagram"><i class="ti-instagram"></i></a>
+                        <a href="https://github.com/Koii2k3" title="Me on Github"><i class="ti-github"></i></a>
+                        <a href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJZZQlrfcftZFjXbDwlSSzZkhQdhvGsbKXSdwJTGSBDdrwPlrmJbmrHGgZWxjfsXSGPbQCg" title="Mail to me"><i class="ti-email"></i></a>
+                    </div>
+                </div>
+
+                <div class="content-child-box" id="content-child-box4">
+                    <div class="content-child-header">
+                        <h2>Achievements</h2>
+                        <div class="content-child-content">
+                            <p><i class="ti-cup"></i><i> Second Prize</i> - Excellent student solves Math on city-level handheld computers 2020-2021.</p></li>
+                            <p><i class="ti-user"></i> Class Leader of class 21050301 (K25) Faculty of Information Technology - Computer Science at TDTU.</p></li>
+                            <p><i class="ti-briefcase"></i> Official member and Algorithmic branch of the club ICON at TDTU.</p></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            
+        </div>
+    </div>
+</body>
+</html>
+
